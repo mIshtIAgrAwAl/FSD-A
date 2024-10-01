@@ -1,3 +1,12 @@
-body{
-    background-color: darkgray;
+div > p{/*child*/
+    background-color: aquamarine;
+}
+div p{
+    background-color: rgb(16, 35, 212);
+}
+div + p{/*adjacent sibling*/
+    background-color: rgb(127, 255, 138);
+}
+div ~ p{/*general sibling*/
+    background-color: rgb(255, 127, 217);
 }
