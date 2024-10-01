@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.dv{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+    width: 100vw;
+    background-color: azure;
+    justify-content: center;
+    gap: 20px;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
