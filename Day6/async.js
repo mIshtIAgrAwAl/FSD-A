@@ -31,12 +31,35 @@
 // })
 // .catch((error)=>console.log("Error fetching data: "+error));
 
+const students = [
+    {
+        'name':'Alice',
+        'score':50,
+    },
+    {
+        'name':'Bob',
+        'score':54,
+    },
+    {
+        'name':'Charlie',
+        'score':90,        
+    },
+
+    {
+        'name':'David',
+        'score':61
+    }
+]
+
 function task(message,delay){
     return new Promise((resolve)=>{
         setTimeout(()=>{
             console.log(message)
-            resolve();
+            resolve(students);
         },delay);
     });
 }
-task("First task completed",1000).then(()=> task("Second task completed",2000)).then(()=> task("Third task completed",3000));
+task("First task completed",1000)
+.then(()=> task("Second task completed",2000))
+.then(()=> task("Third task completed",3000))
+.then((students)=>console.log("Data recieved: ",students));
