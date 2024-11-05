@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#top{
+    background-color: rgb(248, 242, 234);
+    color: azure;
+    border: 2px solid plum;
+}
+h1{
+    background-color: rgb(227, 228, 228);
+    color: rgb(74, 198, 255);
+}
+a{
+    text-decoration: none;
+}
